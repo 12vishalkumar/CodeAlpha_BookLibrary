@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!------------------------------- tital icon -------------------------------->
+        <link rel="icon" href="./image/icon.png" type="image/x-icon" />
+        <title>Book Library</title>
+        <!------------------------------- style.css file ---------------------------->
+        <link rel="stylesheet" href="./style1.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Book Library</h1>
+            <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search the books..." />
+                <button id="search-button">Search</button>
+                <a href="./index2.html" target="_blank"><button>Book Checkout</button></a>
+                <select id="categories-dropdown">
+                    <option value="" disabled selected>Select the Book Category ⏬ </option>
+                    <option value="biography">Biography</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="history">History</option>
+                    <option value="non-fiction">Non-fiction</option>
+                    <option value="science">Science</option>
+                </select>
+            </div>
+            <div id="books-container"></div>
+        </div>
+        <footer>
+            <p>Copy Right &copy; 2024 Book Library by Vishal Kumar ❤</p>
+        </footer>
+    </body>
+    <!--------------------------------- script file ------------------------------->
+    <script src="./script.js"></script>
+</html>

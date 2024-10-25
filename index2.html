@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!------------------------------- Tital icon -------------------------------->
+    <link rel="icon" href="./image/icon.png" type="image/x-icon" />
+    <title>Book Checkout</title>
+    <!------------------------------- style.css file ---------------------------->
+    <link rel="stylesheet" href="./style2.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Book Checkout</h1>
+      <form id="borrow-form">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required />
+        
+        <label for="book">Book Title:</label>
+        <input type="text" id="book" name="book" placeholder="Enter book title" required />
+        
+        <label for="date">Checkout Date:</label>
+        <input type="date" id="date" name="date" required />
+        
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <!-------------------------------- script code ----------------------------->
+    <script>
+      document.getElementById("borrow-form").addEventListener("submit", function(event) {
+        event.preventDefault();
+        alert("Book Checkout successful!");
+        this.reset();
+      });
+    </script>
+  </body>
+</html>
